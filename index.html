@@ -68,7 +68,7 @@
           <li><a href="#dnt">13. Controls for do-not-track features</a></li>
           <li><a href="#uslaws">14. Do United States residents have specific privacy rights?</a></li>
           <li><a href="#clausea">15. On-device bank notification access</a></li>
-          <li><a href="#clauseb">16. AI-based receipt processing</a></li>
+          <li><a href="#clauseb">16. AI-based receipt and voice processing</a></li>
           <li><a href="#clausec">17. Local-first storage and optional sync</a></li>
           <li><a href="#policyupdates">18. Do we make updates to this notice?</a></li>
           <li><a href="#contact">19. How can you contact us about this notice?</a></li>
@@ -87,6 +87,7 @@
         <li>email addresses</li>
         <li>financial transaction data (amounts, descriptions, categories, lists and budgets the user enters)</li>
         <li>receipt images uploaded by the user for AI processing</li>
+        <li>voice recordings the user creates to add transactions, uploaded for AI transcription and processing</li>
       </ul>
       <p><strong>Sensitive Information.</strong> When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:</p>
       <ul>
@@ -96,7 +97,7 @@
       <p><strong>Social Media Login Data.</strong> We may provide you with the option to register with us using your existing social media account details, like your Facebook, X, or other social media account. If you choose to register in this way, we will collect certain profile information about you from the social media provider, as described in the section called &ldquo;<a href="#sociallogins">How do we handle your social logins?</a>&rdquo; below.</p>
       <p><strong>Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:</p>
       <ul>
-        <li><em>Mobile Device Access.</em> We may request access or permission to certain features from your mobile device, including your mobile device's camera, gallery, and other features. If you wish to change our access or permissions, you may do so in your device's settings.</li>
+        <li><em>Mobile Device Access.</em> We may request access or permission to certain features from your mobile device, including your mobile device's camera, gallery, microphone, and other features. If you wish to change our access or permissions, you may do so in your device's settings.</li>
         <li><em>Mobile Device Data.</em> We automatically collect device information (such as your mobile device ID, model, and manufacturer), operating system, version information and system configuration information, device and application identification numbers, browser type and version, hardware model, Internet service provider and/or mobile carrier, and Internet Protocol (IP) address (or proxy server). If you are using our application(s), we may also collect information about the phone network associated with your mobile device, your mobile device's operating system or platform, the type of mobile device you use, your mobile device's unique device ID, and information about the features of our application(s) you accessed.</li>
         <li><em>Push Notifications.</em> We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.</li>
       </ul>
@@ -130,6 +131,7 @@
         <li><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.</li>
         <li><strong>Bank notification processing.</strong> To read on-device bank notifications in order to detect and suggest transactions to the user.</li>
         <li><strong>Receipt image processing.</strong> To process receipt images through AI in order to extract and suggest transaction details.</li>
+        <li><strong>Voice transaction processing.</strong> To transcribe and process voice recordings the user creates in order to extract and suggest transaction details.</li>
         <li><strong>Data synchronization and backup.</strong> To synchronize the user's financial data across their devices and keep a backup of it.</li>
       </ul>
 
@@ -207,6 +209,7 @@
       <ul>
         <li>Text analysis</li>
         <li>Image analysis</li>
+        <li>Audio and voice analysis (speech-to-text transcription)</li>
       </ul>
       <h3>How We Process Your Data Using AI</h3>
       <p>All personal information processed using our AI Products is handled in line with our Privacy Notice and our agreement with third parties. This ensures high security and safeguards your personal information throughout the process, giving you peace of mind about your data's safety.</p>
@@ -344,8 +347,9 @@
       <h2 id="clausea">15. On-Device Bank Notification Access</h2>
       <p>With your explicit permission, DebAI uses Android's notification access to read notifications generated by banking and financial apps installed on your device. This access is used solely to detect financial transactions and suggest them to you within the app. We only process notifications from financial institutions; we do not read, store, or transmit notifications from messaging, email, or other unrelated apps. The content of these notifications is processed to extract transaction details such as the amount, merchant, and date. You can revoke this permission at any time in your device settings, and the feature is entirely optional.</p>
 
-      <h2 id="clauseb">16. AI-Based Receipt Processing</h2>
+      <h2 id="clauseb">16. AI-Based Receipt and Voice Processing</h2>
       <p>When you choose to scan a receipt or invoice, the image is sent to our backend and to Google's Gemini AI service to automatically extract transaction details. This feature is optional: if you do not upload images, no image data is processed by AI. Extracted data is presented to you for confirmation before it is saved.</p>
+      <p>Similarly, when you choose to add a transaction by voice, the audio you record is sent to our backend and to Google's Gemini AI service to be transcribed and to extract transaction details. This feature is optional: if you do not use voice entry, no audio is recorded or processed. Extracted data is presented to you for confirmation before it is saved.</p>
 
       <h2 id="clausec">17. Local-First Storage and Optional Sync</h2>
       <p>Your financial data is primarily stored locally on your device. It is only synchronized to our servers if you have an active subscription or trial. If you do not sync, your data remains solely on your device and is not backed up by us.</p>
