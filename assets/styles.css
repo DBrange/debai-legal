@@ -22,8 +22,8 @@
   --text-soft: #565d6d;
   --muted: #8a90a0;
   --border: #e6e8ee;
-  --brand: #3b3bf1;
-  --brand-soft: #ececff;
+  --brand: #F26654;
+  --brand-soft: #fdece8;
   --radius: 16px;
   --shadow: 0 1px 2px rgba(20, 24, 40, .04), 0 12px 32px rgba(20, 24, 40, .06);
   --maxw: 820px;
@@ -77,15 +77,11 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 .brand__mark {
-  display: grid;
-  place-items: center;
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: var(--brand);
-  color: #fff;
-  font-weight: 900;
-  font-size: 17px;
+  object-fit: cover;
+  display: block;
 }
 
 /* Segmented tabs */
@@ -114,7 +110,7 @@ a:hover { text-decoration: underline; }
 .tabs__link.is-active {
   background: var(--brand);
   color: #fff;
-  box-shadow: 0 6px 16px rgba(59, 59, 241, .28);
+  box-shadow: 0 6px 16px rgba(242, 102, 84, .32);
 }
 
 /* ===== Layout ===== */
